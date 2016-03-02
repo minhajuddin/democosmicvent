@@ -1,3 +1,9 @@
-nav {
-  color: red;
+nav, nav a {
+  color: white;
+}
+
+nav a.active {
+	color: #222;
+	background-color: white;
+	padding: 10px;
 }

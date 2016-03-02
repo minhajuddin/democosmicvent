@@ -19,14 +19,12 @@
 
     <img src="/images/cosmicvent-logo.png" alt=""/>
 
-    <h1><%= current_page.url %></h1>
     <nav>
-      <a href="/">Home</a> |
-      <a href="/about">About Us</a> |
-      <a href="/contact">Contact Us</a>
+      <a href="/" <%= "class=active" if current_page.url == "/" %>>Home</a> |
+      <a href="/about" <%= "class=active" if current_page.url == "/about/" %>>About Us</a> |
+      <a href="/contact" <%= "class=active" if current_page.url == "/contact/" %>>Contact Us</a>
     </nav>
 
-  <h2>Welcome</h2>
 
   <%= yield %>
 
